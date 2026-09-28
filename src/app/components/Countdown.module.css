@@ -1,0 +1,82 @@
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.label {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: #C8788A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.number {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #722F37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-width: 5rem;
+  display: block;
+}
+
+.unitLabel {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C8788A;
+}
+
+.separator {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: #D4AF37;
+  align-self: flex-start;
+  padding-top: 0.3rem;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .number {
+    font-size: 2.2rem;
+    min-width: 2.5rem;
+  }
+  .grid {
+    gap: 0.5rem;
+  }
+  .separator {
+    font-size: 2rem;
+    padding-top: 0.2rem;
+  }
+  .unitLabel {
+    font-size: 0.6rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+}
